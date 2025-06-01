@@ -175,12 +175,21 @@ FROM (
         ('MET_AP_1', 'books', 'public', 'isbn', 'column'),
         ('MET_AP_1', 'users', 'public', 'id', 'column'),
         ('MET_AP_1', 'users', 'public', 'age', 'column'),
+
         ('MET_AP_2', 'books', 'public', 'authors', 'column'),
         ('MET_AP_2', 'books', 'public', 'categories', 'column'),
 
         ('MET_AP_3', 'books', 'public', 'published_date', 'column'),
         ('MET_AP_4', 'books', 'public', 'isbn', 'column'),
-        ('MET_AP_5', 'users', 'public', 'location', 'column')
+        ('MET_AP_5', 'users', 'public', 'location', 'column'),
+
+
+        ('MET_AP_8', 'users', 'public', 'age', 'column'),
+        ('MET_AP_9', 'users', 'public', 'name', 'column'),
+        ('MET_AP_7', 'books', 'public', 'rating_count', 'column'),
+        ('MET_AP_10', 'books', 'public', 'isbn', 'column')
+
+
 ) AS t(met_ap_code, table_name, table_schema, column_name, granularity)
 JOIN meta_dq_applied_method mdq_am ON mdq_am.code = t.met_ap_code;
 
