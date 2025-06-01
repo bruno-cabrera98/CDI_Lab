@@ -3,3 +3,4 @@ ydata-profiling
 sqlalchemy
 psycopg2-binary
 kagglehub
+python-dotenv
